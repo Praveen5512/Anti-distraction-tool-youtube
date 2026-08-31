@@ -1,8 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-const DEFAULT_ENDPOINT =
-  "";
+const DEFAULT_ENDPOINT ="";
 
 function cleanDescription(description) {
   if (!description) return "";
@@ -184,7 +183,7 @@ export default function VideoQueue() {
   }
 
   return (
-    <div className="container py-4 py-md-5">
+    <div className="container py-4 py-md-5 ">
       <div className="row justify-content-center">
         <div className="col-lg-8">
 
@@ -200,7 +199,7 @@ export default function VideoQueue() {
             </button>
           </div>
 
-          <p className="text-muted mb-4">
+          <p className="text-light mb-4">
             {unwatchedVideos.length} waiting,{" "}
             {watchedVideos.length} watched
           </p>
@@ -208,7 +207,7 @@ export default function VideoQueue() {
 
           {/* Settings */}
           {showSettings && (
-            <div className="card mb-4">
+            <div className="card mb-4 bg-dark text-light border-light">
               <div className="card-body">
 
                 <label className="form-label">
@@ -217,7 +216,7 @@ export default function VideoQueue() {
 
                 <input
                   type="text"
-                  className="form-control mb-3"
+                  className="form-control mb-3 bg-dark text-light"
                   value={endpointDraft}
                   onChange={(e) =>
                     setEndpointDraft(e.target.value)
@@ -261,7 +260,7 @@ export default function VideoQueue() {
                 </span>
               </div>
 
-              <p className="text-muted mt-3">
+              <p className="text-light mt-3">
                 Loading videos...
               </p>
 
@@ -279,7 +278,7 @@ export default function VideoQueue() {
 
           {/* Featured Video */}
           {status === "success" && selectedVideo && (
-            <div className="card mb-4">
+            <div className="card mb-4 bg-dark text-light">
 
               <div className="ratio ratio-16x9 bg-dark">
 
@@ -303,7 +302,7 @@ export default function VideoQueue() {
                   {selectedVideo.title}
                 </h3>
 
-                <p className="text-muted small">
+                <p className="text-light small">
                   {relativeDate(selectedVideo.publishedAt)}
                 </p>
 
@@ -356,7 +355,7 @@ export default function VideoQueue() {
           {/* Search */}
           {status === "success" &&
             unwatchedVideos.length > 1 && (
-              <div className="mb-4">
+              <div className="mb-4 bg-dark text-light">
 
                 <input
                   type="text"
@@ -375,7 +374,7 @@ export default function VideoQueue() {
           {/* Rest of Queue */}
           {status === "success" &&
             remainingVideos.length > 0 && (
-              <div className="mb-4">
+              <div className="mb-4 ">
 
                 <button
                   className="btn btn-outline-secondary w-100 text-start"
@@ -389,12 +388,12 @@ export default function VideoQueue() {
 
 
                 {showQueue && (
-                  <div className="list-group mt-2">
+                  <div className="list-group mt-2 ">
 
                     {remainingVideos.map((video) => (
                       <div
                         key={video.id}
-                        className="list-group-item d-flex justify-content-between align-items-start gap-3"
+                        className="list-group-item d-flex justify-content-between align-items-start gap-3 bg-dark text-light"
                       >
 
                         <div className="flex-grow-1">
@@ -413,7 +412,7 @@ export default function VideoQueue() {
                             {video.title}
                           </button>
 
-                          <div className="text-muted small mt-1">
+                          <div className=" small text-light mt-1">
                             {relativeDate(
                               video.publishedAt
                             )}
@@ -466,7 +465,7 @@ export default function VideoQueue() {
                         className="list-group-item d-flex justify-content-between align-items-center gap-3"
                       >
 
-                        <span className="text-muted text-decoration-line-through">
+                        <span className="text-light text-decoration-line-through">
                           {video.title}
                         </span>
 
@@ -492,7 +491,7 @@ export default function VideoQueue() {
 
           {/* Footer */}
           {status === "success" && (
-            <div className="text-center text-muted small mt-5">
+            <div className="text-center text-light small mt-5">
               ✓ Synced with your feed
             </div>
           )}
