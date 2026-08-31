@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import VideoQueue from './components/VideoQueue';
+
+// const API_URL ="https://script.google.com/macros/s/AKfycbwTZaX6NOe3T5zizw-0pRbmQSrP0V54MZ_QSrt-xCw8Wjjb7b-6WGJ3JjljIxwgizcaAQ/exec"
 
 function App() {
+
+  
+  useEffect(() => {
+    if (Notification.permission !== "granted") {
+      Notification.requestPermission();
+    }
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <VideoQueue/>
     </div>
   );
 }
