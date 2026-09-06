@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/Anti-distraction-tool-youtube/static/css/main.37f3d6cb.css",
-    "main.js": "/Anti-distraction-tool-youtube/static/js/main.e316606b.js",
-    "static/js/453.e89baa14.chunk.js": "/Anti-distraction-tool-youtube/static/js/453.e89baa14.chunk.js",
+    "main.css": "/Anti-distraction-tool-youtube/static/css/main.e4b9f48b.css",
+    "main.js": "/Anti-distraction-tool-youtube/static/js/main.5b841487.js",
     "index.html": "/Anti-distraction-tool-youtube/index.html",
-    "main.37f3d6cb.css.map": "/Anti-distraction-tool-youtube/static/css/main.37f3d6cb.css.map",
-    "main.e316606b.js.map": "/Anti-distraction-tool-youtube/static/js/main.e316606b.js.map",
-    "453.e89baa14.chunk.js.map": "/Anti-distraction-tool-youtube/static/js/453.e89baa14.chunk.js.map"
+    "main.e4b9f48b.css.map": "/Anti-distraction-tool-youtube/static/css/main.e4b9f48b.css.map",
+    "main.5b841487.js.map": "/Anti-distraction-tool-youtube/static/js/main.5b841487.js.map"
   },
   "entrypoints": [
-    "static/css/main.37f3d6cb.css",
-    "static/js/main.e316606b.js"
+    "static/css/main.e4b9f48b.css",
+    "static/js/main.5b841487.js"
   ]
 }
