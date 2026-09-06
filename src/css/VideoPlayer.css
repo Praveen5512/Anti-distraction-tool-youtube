@@ -1,0 +1,9 @@
+.video-player{
+    height: 50vh;
+    width: 100%;
+}
+.expandDesc{
+    cursor: pointer;
+    color: blue;
+    
+}
